@@ -7,7 +7,7 @@ var
         while(value > 0){
           remainder = value % hexValue;
           value = (value - remainder) / hexValue;
-          result.shift(metaTags.charAt(remainder));
+          result.unshift(metaTags.charAt(remainder));
         }
         return result.join('');
     },
