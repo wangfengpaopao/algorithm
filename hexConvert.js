@@ -16,7 +16,7 @@ var
             tmp = 1;
         value = String(value).split("");
         while(value[0]){
-            result += value.pop() * tmp;
+            result += metaTags.indexOf(value.pop()) * tmp;
             tmp *= hexValue;
         
         }
