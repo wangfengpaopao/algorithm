@@ -15,7 +15,7 @@ var
         var result = 0
             tmp = 1;
         value = String(value).split("");
-        while(vlaue[0]){
+        while(value[0]){
             result += value.pop() * tmp;
             tmp *= hexValue;
         
