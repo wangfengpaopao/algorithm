@@ -4,9 +4,9 @@ var
     h10ConvertX = function(value, hexValue){ 
         var result = [],
             remainder = 0;
-        while(hexValue > 0){
-          remainder = hexValue % value;
-          hexValue = (hexValue - remainder) / value;
+        while(value > 0){
+          remainder = value % hexValue;
+          value = (value - remainder) / hexValue;
           result.shift(metaTags.charAt(remainder));
         }
         return result.join('');
