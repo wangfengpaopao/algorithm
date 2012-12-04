@@ -14,9 +14,9 @@ var
     xConvertH10 = function(value, hexValue){
         var result = 0
             tmp = 1;
-        value = String(vlaue).split("");
+        value = String(value).split("");
         while(vlaue[0]){
-            result += value.popp() * tmp;
+            result += value.pop() * tmp;
             tmp *= hexValue;
         
         }
@@ -26,7 +26,7 @@ var
 
         //todo check parameters
         var mValue10 = xConvertH10(mValue, mHexValue);
-        return h10ConvertX(mValue, nHexValue);
+        return h10ConvertX(mValue10, nHexValue);
     
     };
 
